@@ -1,0 +1,38 @@
+
+
+	body {
+		background: url("img.jpg"); 
+	}
+	.road{
+		border-bottom: 7px dashed orange; 
+	}
+	.runner {
+    background: url(sheep_running_sprite_sheet_by_lazerlars_d7ja19b-pre.png);
+    height: 266px;
+    width: 159px;
+    animation: walk 1s steps(6) infinite,
+ 				forward 6s linear infinite;
+}
+@keyframes walk{
+0% {
+    background-position-x: 0px;
+    background-position-y: 28px;
+}
+100% {
+    background-position-x: 3000px;
+    background-position-y: 28px;
+}
+}
+
+@keyframes forward{
+	0% {
+    transform: translateX(-100px);
+}
+
+100% {
+    transform: translateX(1800px);
+}
+}
+
+
+
